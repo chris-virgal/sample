@@ -18,27 +18,26 @@
 
 <body>
   <header class="header">
-    <h1 class="header-title">
-      <a href="/">instant</a>
-    </h1>
-    <p class="header-subtitle">
-      using
-      <a href="https://github.com/algolia/instantsearch.js">
-        InstantSearch.js
-      </a>
-    </p>
-  </header>
-
-  <div class="container">
-    <div class="search-panel">
-      <div class="search-panel__results">
-        <div id="searchbox"></div>
-        <div id="hits"></div>
+    <div class="header__container">
+      <div class="header__logo-container">
+        <img class="header__logo" src="src/assets/logo.svg">
+      </div>
+      <div class="header__searchbox-container">
+        <div class="header__searchbox" id="searchbox"></div>
+        <div class="autocomplete">
+          <div class="autocomplete_container">
+            <div class="autocomplete__hits" id="autocomplete-hits">
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+  </header>
 
-    <div id="pagination"></div>
-  </div>
+
+      <div id="hits"></div>
+      <div class="results">
+        </div>
 
   <script src="https://cdn.jsdelivr.net/algoliasearch/3.32.0/algoliasearchLite.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@4.25.3"></script>
